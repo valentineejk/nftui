@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   List tabOptions = const [
     ["recent", RecentTab()],
     ["Trending", TrendingTab()],
-    ["Top", TopTab()],
+    ["Top Trends", TopTab()],
   ];
   @override
   Widget build(BuildContext context) {
