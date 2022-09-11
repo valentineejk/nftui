@@ -12,6 +12,9 @@ class MyTabBar extends StatelessWidget {
         TabBar(
           unselectedLabelColor: Colors.grey,
           labelColor: Colors.black,
+          indicatorColor: Colors.black,
+          indicatorSize: TabBarIndicatorSize.tab,
+          padding: EdgeInsets.all(10),
           tabs: [
             Text(tabOptions[0][0]),
             Text(tabOptions[1][0]),

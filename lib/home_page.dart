@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nftui/components/glass_box.dart';
 import 'package:nftui/components/my_bottombar.dart';
 import 'package:nftui/components/my_tabbar.dart';
 
@@ -35,9 +36,12 @@ class _HomePageState extends State<HomePage> {
       length: tabOptions.length,
       child: Scaffold(
         backgroundColor: Colors.grey[300],
-        bottomNavigationBar: MyBottomBar(
-          index: currentIndex,
-          onTap: _handleBottom,
+        extendBody: true,
+        bottomNavigationBar: GlassBox(
+          child: MyBottomBar(
+            index: currentIndex,
+            onTap: _handleBottom,
+          ),
         ),
         body: ListView(
           children: [
